@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html> 
+<title>Stripe Payment </title> 
+<body> 
+	<h3>Payment Gateway</h3> 
+	<form action="payment" method="POST"> 
+	<script
+		src="//checkout.stripe.com/v2/checkout.js"
+		class="stripe-button"
+		data-key="<%= key %>" 
+		data-amount="5000" 
+		data-currency="CAD" 
+		data-name="Sahil Shah" 
+		data-description="Buy Something" 
+		data-locale="auto" > 
+		</script> 
+	</form> 
+</body> 
+</html> 
